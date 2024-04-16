@@ -284,7 +284,7 @@ public class testDAO {
         pst.setString(1, id);
         pst.executeUpdate();
 
-        sql = "DELETE FROM `ts1`.`staff` WHERE (`id` = '7');";
+        sql = "DELETE FROM `ts1`.`staff` WHERE (`id` = ?);";
         pst = con.prepareStatement(sql);
         pst.setString(1, id);
         pst.executeUpdate();

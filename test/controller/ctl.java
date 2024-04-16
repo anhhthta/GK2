@@ -41,7 +41,6 @@ public class ctl {
         Stream<Staff> list = new testDAO().readVehical();
         list.forEach(item -> {
             item.setCount(++i);
-            item.showInfoṛ();
             manager.add(item);
         });
     }
